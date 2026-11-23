@@ -1,0 +1,18 @@
+# Dependencies & build output
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# Workshop runtime cache
+server/.cache/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs & OS artifacts
+*.log
+npm-debug.log*
+.DS_Store

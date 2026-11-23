@@ -1,0 +1,574 @@
+{
+ "name": "波托菲诺",
+ "title": "波托菲诺 · 利古里亚",
+ "region": "意大利 · 利古里亚",
+ "place": "海港小广场 · 圣马丁教堂",
+ "timezone": "Europe/Rome",
+ "level": 3.1,
+ "flag": "<svg aria-hidden='true' viewBox='0 0 30 20'><rect width='10' height='20' fill='#3f8a5a'/><rect x='10' width='10' height='20' fill='#fbf7ee'/><rect x='20' width='10' height='20' fill='#c9584c'/></svg>",
+ "styles": {
+  "default": {
+   "facade": "painted",
+   "wall": [
+    "#f5c460",
+    "#f1a672",
+    "#e27351",
+    "#f7d785",
+    "#edb19b",
+    "#f4e4c1",
+    "#e69a52",
+    "#d25a41"
+   ],
+   "shutters": [
+    "#337446",
+    "#3e844d",
+    "#2b6a48"
+   ],
+   "roof": "hipped",
+   "ridge": "long",
+   "pitch": 20,
+   "roofColour": [
+    "#a9a39a",
+    "#9e9a94",
+    "#b4ada3",
+    "#a49d94",
+    "#cb7753",
+    "#aba59c"
+   ],
+   "roofTex": "slate",
+   "eaves": 0.35,
+   "levels": 4,
+   "floor": 3.1,
+   "shop": "poi",
+   "awning": "some",
+   "awnings": [
+    "#295f90",
+    "#295f90",
+    "#f3ead6",
+    "#337446"
+   ],
+   "maxSpan": 18,
+   "rectFill": 0.6,
+   "flatRoof": "#d1c7b3"
+  },
+  "rules": [
+   {
+    "if": {
+     "maxArea": 25
+    },
+    "set": {
+     "levels": 1,
+     "shop": "none",
+     "roof": "flat"
+    }
+   },
+   {
+    "if": {
+     "type": [
+      "church",
+      "chapel"
+     ]
+    },
+    "set": {
+     "facade": "civic",
+     "levels": 3,
+     "floor": 4.4,
+     "wall": [
+      "#f1e5ca"
+     ],
+     "shop": "none",
+     "roof": "gabled",
+     "pitch": 22,
+     "roofColour": [
+      "#8d8a86"
+     ]
+    }
+   },
+   {
+    "if": {
+     "nearStreet": true,
+     "maxArea": 200
+    },
+    "set": {
+     "levels": 5
+    }
+   }
+  ]
+ },
+ "buildings": {},
+ "palette": {
+  "ground": "#ebdfc4",
+  "road": "#beb3ac",
+  "pavement": "#e9d9bc",
+  "walk": "#e5d3b3",
+  "grass": "#b3d57d",
+  "water": "#7ac4ce",
+  "slab": "#dac49c",
+  "marking": "#f5efe3",
+  "kerb": "#e0d1b5",
+  "paving": "#ccba9d"
+ },
+ "paving": {
+  "style": "slabs",
+  "size": 0.7
+ },
+ "lamp": {
+  "colour": "#3f4644",
+  "height": 4.2,
+  "head": "#f6ebd0"
+ },
+ "shops": {
+  "signs": [
+   "BAR",
+   "GELATERIA",
+   "FOCACCIA",
+   "TRATTORIA"
+  ],
+  "font": "Georgia,serif",
+  "fascias": [
+   "#2c4b5e",
+   "#6f3a32",
+   "#375f48"
+  ]
+ },
+ "boats": {
+  "hulls": [
+   "#f4efe3",
+   "#f4efe3",
+   "#f4efe3",
+   "#295f90",
+   "#c14132",
+   "#30875a"
+  ],
+  "stripes": [
+   "#295f90",
+   "#c14132",
+   "#30875a",
+   "#eab440"
+  ]
+ },
+ "trees": {
+  "default": {
+   "style": 3,
+   "colours": [
+    "#7ba958",
+    "#91b968"
+   ],
+   "height": 8
+  },
+  "rules": [
+   {
+    "match": "Woodland",
+    "evergreen": true,
+    "vary": 0.4,
+    "mix": [
+     {
+      "style": 3,
+      "colours": [
+       "#6a994e",
+       "#7ba657",
+       "#86b15b"
+      ],
+      "height": 9,
+      "share": 5
+     },
+     {
+      "style": 2,
+      "colours": [
+       "#7aab5a",
+       "#91b966"
+      ],
+      "height": 13,
+      "share": 2
+     },
+     {
+      "style": 7,
+      "colours": [
+       "#588749",
+       "#65934f"
+      ],
+      "height": 12,
+      "share": 1
+     },
+     {
+      "style": 3,
+      "colours": [
+       "#86bd55",
+       "#9bc763"
+      ],
+      "height": 9,
+      "share": 1.4,
+      "evergreen": false,
+      "autumn": "#d8b04a",
+      "spring": "#b9dc6e"
+     }
+    ]
+   },
+   {
+    "match": "Garden tree",
+    "evergreen": true,
+    "vary": 0.35,
+    "mix": [
+     {
+      "style": 6,
+      "colours": [
+       "#99b377",
+       "#a8bd81"
+      ],
+      "height": 6,
+      "share": 3
+     },
+     {
+      "style": 3,
+      "colours": [
+       "#7ba657",
+       "#8eb462"
+      ],
+      "height": 7,
+      "share": 3
+     },
+     {
+      "style": 7,
+      "colours": [
+       "#588749",
+       "#65934f"
+      ],
+      "height": 11,
+      "share": 1
+     },
+     {
+      "style": 3,
+      "colours": [
+       "#86bd55",
+       "#9bc763"
+      ],
+      "height": 7,
+      "share": 1.1,
+      "evergreen": false,
+      "autumn": "#d8b04a",
+      "spring": "#b9dc6e"
+     }
+    ]
+   }
+  ]
+ },
+ "people": {
+  "clothes": [
+   "#f2ecdf",
+   "#2b4a6f",
+   "#e27351",
+   "#7aa3c5",
+   "#f1c761",
+   "#337446",
+   "#edb19b"
+  ]
+ },
+ "vehicles": {
+  "kinds": [
+   "small",
+   "small",
+   "hatch"
+  ],
+  "colours": [
+   "#f2f2ee",
+   "#2e3139",
+   "#99a3ae",
+   "#c14132"
+  ],
+  "plate": "#f5f3e5"
+ },
+ "seasons": [
+  {
+   "id": "summer",
+   "label": "盛夏晴港",
+   "leaves": "summer",
+   "crowd": 1.6,
+   "note": {
+    "text": "七月是这片海岸最干燥的季节，热那亚一带月均降水量约 26 毫米。",
+    "source": "热那亚气候统计（1991–2020）",
+    "url": "https://en.wikipedia.org/wiki/Genoa"
+   }
+  },
+  {
+   "id": "autumn",
+   "label": "深秋海雨",
+   "leaves": "autumn",
+   "wet": true,
+   "umbrellas": true,
+   "wx": "rain",
+   "crowd": 0.8,
+   "cafes": "closed",
+   "note": {
+    "text": "十一月降水最为充沛，热那亚一带月均雨量可达约 200 毫米。",
+    "source": "热那亚气候统计（1991–2020）",
+    "url": "https://en.wikipedia.org/wiki/Genoa"
+   }
+  },
+  {
+   "id": "winter",
+   "label": "暖冬渔湾",
+   "leaves": "bare",
+   "coats": true,
+   "crowd": 0.5,
+   "cafes": false,
+   "boats": 0.5,
+   "grass": "#b3d57d",
+   "note": {
+    "text": "一月气候温和，热那亚一带日均气温约 12.1 °C，夜间约 6.0 °C。",
+    "source": "热那亚气候统计（1991–2020）",
+    "url": "https://en.wikipedia.org/wiki/Genoa"
+   }
+  }
+ ],
+ "occasions": [
+  {
+   "id": "sangiorgio",
+   "label": "圣乔治篝火夜",
+   "leaves": "spring",
+   "crowd": 2.0,
+   "icon": "spring",
+   "dress": {
+    "colours": [
+     "#f2ecdf",
+     "#2b4a6f",
+     "#c14132"
+    ],
+    "share": 0.3
+   },
+   "note": {
+    "text": "每年 4 月 23 日 21:00，海港小广场会燃起传统篝火，若木柱倒向大海则寓意吉兆。",
+    "source": "波托菲诺市政 · MenteLocale",
+    "url": "https://portofino.it/?p=2893"
+   },
+   "night": 0.85,
+   "litShare": 0.6
+  },
+  {
+   "id": "natale",
+   "label": "圣诞灯夜",
+   "leaves": "bare",
+   "coats": true,
+   "crowd": 1.6,
+   "icon": "winter",
+   "decor": {
+    "fairy": [
+     "#fcf1c7",
+     "#fbe5ac",
+     "#fbe8b2"
+    ]
+   },
+   "note": {
+    "text": "十二月初小广场圣诞树与沿街彩绘立面同步亮起暖白灯串，点亮冬夜海湾。",
+    "source": "SiViaggia · 利古里亚冬日节庆",
+    "url": "https://siviaggia.it/notizie/natale-tigullio-liguria-2026/609883/"
+   },
+   "night": true,
+   "litShare": 0.72,
+   "grass": "#b3d57d"
+  }
+ ],
+ "months": [
+  "winter",
+  "winter",
+  "winter",
+  "summer",
+  "summer",
+  "summer",
+  "summer",
+  "summer",
+  "summer",
+  "autumn",
+  "autumn",
+  "winter"
+ ],
+ "isoLabel": "海港全景",
+ "views": [
+  {
+   "id": "harbour",
+   "label": "渔湾海港",
+   "camera": {
+    "yaw": -35,
+    "pitch": 30,
+    "zoom": 2.4,
+    "x": 40,
+    "y": 0,
+    "z": 2
+   }
+  },
+  {
+   "id": "piazzetta",
+   "label": "海港小广场",
+   "camera": {
+    "yaw": -60,
+    "pitch": 26,
+    "zoom": 3.4,
+    "x": 8,
+    "y": 15,
+    "z": 3
+   }
+  },
+  {
+   "id": "sanmartino",
+   "label": "圣马丁教堂",
+   "camera": {
+    "yaw": 20,
+    "pitch": 24,
+    "zoom": 3.6,
+    "x": -58,
+    "y": 60,
+    "z": 10
+   }
+  },
+  {
+   "id": "woods",
+   "label": "海岸林丘",
+   "camera": {
+    "yaw": -20,
+    "pitch": 34,
+    "zoom": 2.2,
+    "x": -50,
+    "y": -55,
+    "z": 4
+   }
+  }
+ ],
+ "legend": [
+  {
+   "name": "彩绘临海民居",
+   "source": "热那亚式彩绘立面",
+   "count": "100",
+   "icon": "buildings",
+   "camera": {
+    "yaw": -45,
+    "pitch": 24,
+    "zoom": 3.2,
+    "x": 40,
+    "y": 30,
+    "z": 6
+   }
+  },
+  {
+   "name": "圣马丁教堂",
+   "source": "始建于 986 年 · 钟楼地标",
+   "count": "986",
+   "icon": "landmark",
+   "camera": {
+    "yaw": 20,
+    "pitch": 24,
+    "zoom": 3.6,
+    "x": -58,
+    "y": 60,
+    "z": 10
+   }
+  },
+  {
+   "name": "港湾停泊游艇",
+   "source": "海港水域示意",
+   "count": "56",
+   "icon": "water",
+   "camera": {
+    "yaw": -35,
+    "pitch": 30,
+    "zoom": 2.6,
+    "x": 45,
+    "y": -10,
+    "z": 1
+   }
+  },
+  {
+   "name": "冬青栎与海岸松林",
+   "source": "波托菲诺海洋公园",
+   "count": "520",
+   "icon": "trees",
+   "camera": {
+    "yaw": -20,
+    "pitch": 34,
+    "zoom": 2.2,
+    "x": -50,
+    "y": -55,
+    "z": 4
+   }
+  }
+ ],
+ "notes": [
+  {
+   "title": "海港小广场与码头",
+   "text": "围绕小广场及马可尼岸线排列的民居立面采用热那亚式多彩彩绘，游艇与渔船停泊在广场旁的翁贝托一世码头。",
+   "links": [
+    {
+     "label": "维基百科（意大利语）",
+     "url": "https://it.wikipedia.org/wiki/Portofino"
+    }
+   ]
+  },
+  {
+   "title": "彩绘建筑立面",
+   "text": "墙面上的窗框、转角线脚与腰线多以彩绘技法绘制而成；当地色彩规范保留了连排立面与底层拱廊商铺的传统风貌。",
+   "links": [
+    {
+     "label": "Italy Segreta 建筑志",
+     "url": "https://italysegreta.com/portofinos-painted-houses/"
+    },
+    {
+     "label": "波托菲诺色彩规划",
+     "url": "https://www.infobuild.it/info_dalle_aziende/piano-del-colore-di-portofino-prima-parte/"
+    }
+   ]
+  },
+  {
+   "title": "圣马丁教堂",
+   "text": "始建于公元 986 年，十九世纪末经修缮形成现今的三廊式条纹立面与玫瑰窗；钟楼与穹顶比例依据实景照片绘制。",
+   "links": [
+    {
+     "label": "维基百科",
+     "url": "https://en.wikipedia.org/wiki/Divo_Martino,_Portofino"
+    }
+   ]
+  },
+  {
+   "title": "圣母升天小礼拜堂",
+   "text": "十四世纪由宗教兄弟会修建，拥有刻有 1555 年字样的石板门楣，墙体与屋顶风貌经微缩艺术化演绎。",
+   "links": [
+    {
+     "label": "维基百科（意大利语）",
+     "url": "https://it.wikipedia.org/wiki/Oratorio_di_Nostra_Signora_Assunta_(Portofino)"
+    }
+   ]
+  },
+  {
+   "title": "海岸林丘植被",
+   "text": "向阳山坡以冬青栎与阿勒颇松等常绿树种为主，园中亦常见矮棕榈；背阴坡面分布有少量秋季落叶阔叶林。",
+   "links": [
+    {
+     "label": "波托菲诺海洋公园 (PDF)",
+     "url": "https://www.portofinoamp.it/come/didattica/3ambientecostierodispensedefinitiveecorrette2012.pdf"
+    },
+    {
+     "label": "波托菲诺公园生境",
+     "url": "https://www.parks.it/parco.portofino/Epar.php"
+    }
+   ]
+  },
+  {
+   "title": "场景绘制说明",
+   "text": "建筑基底、街道、海岸线与林区采自 OpenStreetMap 实测数据；建筑高度、外墙色彩、木百叶、游艇及咖啡座均为手绘还原。",
+   "links": [
+    {
+     "label": "OpenStreetMap 地图数据",
+     "url": "https://www.openstreetmap.org/#map=18/44.3031/9.2095"
+    }
+   ]
+  }
+ ],
+ "cafes": {
+  "umbrellas": [
+   "#f4efe3",
+   "#f4efe3",
+   "#295f90",
+   "#ebdab5"
+  ]
+ },
+ "occasionLabel": "特别场景",
+ "credits": [],
+ "vivid": true
+}

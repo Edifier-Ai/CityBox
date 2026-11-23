@@ -1,0 +1,530 @@
+{
+ "name": "京都 · 祇园白川",
+ "title": "京都 · 祇园白川",
+ "region": "日本 · 京都",
+ "place": "白川运河 · 巽桥",
+ "timezone": "Asia/Tokyo",
+ "level": 2.9,
+ "flag": "<svg aria-hidden='true' viewBox='0 0 30 20'><rect width='30' height='20' fill='#fbf7ee'/><circle cx='15' cy='10' r='5.6' fill='#c9584c'/></svg>",
+ "styles": {
+  "default": {
+   "facade": "timber",
+   "wall": [
+    "#f1e7d0",
+    "#e9ddc4",
+    "#dfd3bb"
+   ],
+   "roof": "gabled",
+   "ridge": "street",
+   "pitch": 24,
+   "roofColour": [
+    "#7c7f88",
+    "#74767e",
+    "#83858c"
+   ],
+   "roofTex": "kawara",
+   "eaves": 0.6,
+   "levels": 2,
+   "floor": 2.9,
+   "eave1": true,
+   "eave1Depth": 0.8,
+   "shop": "poi",
+   "awning": false,
+   "maxSpan": 14,
+   "flatRoof": "#d0c9bd",
+   "wood": "#624534",
+   "slat": "#8a684b",
+   "noren": [
+    "#2b4a6f",
+    "#7e3737",
+    "#cfb274",
+    "#375f48"
+   ],
+   "shopHeight": 2.9,
+   "fascia": [
+    "#5e4634",
+    "#3d4a53",
+    "#6f3a32"
+   ],
+   "rectFill": 0.66
+  },
+  "rules": [
+   {
+    "if": {
+     "maxArea": 14
+    },
+    "set": {
+     "levels": 1,
+     "eave1": false,
+     "shop": "none"
+    }
+   },
+   {
+    "if": {
+     "type": "hotel"
+    },
+    "set": {
+     "facade": "apartment",
+     "roof": "flat",
+     "wall": [
+      "#e3dcce"
+     ],
+     "eave1": false,
+     "balcony": "some",
+     "shop": "none"
+    }
+   },
+   {
+    "if": {
+     "minLevels": 4
+    },
+    "set": {
+     "facade": "office",
+     "roof": "flat",
+     "wall": [
+      "#ded6c9",
+      "#e8e1d5",
+      "#d0c8bc",
+      "#daceb7"
+     ],
+     "eave1": false,
+     "shop": "street",
+     "awning": "some",
+     "awnings": [
+      "#706a61",
+      "#8f5843",
+      "#516657"
+     ],
+     "shopHeight": 3.6,
+     "floor": 3.4
+    }
+   },
+   {
+    "if": {
+     "unknownHeight": true,
+     "minArea": 380
+    },
+    "set": {
+     "facade": "plain",
+     "roof": "flat",
+     "levels": 3,
+     "eave1": false,
+     "wall": [
+      "#e2dacd"
+     ]
+    }
+   }
+  ]
+ },
+ "buildings": {},
+ "palette": {
+  "ground": "#ebe1ca",
+  "road": "#b3acb0",
+  "pavement": "#e5dac4",
+  "walk": "#ded4bf",
+  "grass": "#b7d584",
+  "slab": "#d9c7a5",
+  "marking": "#f5efe3",
+  "kerb": "#dad0bb",
+  "paving": "#cbbfac",
+  "water": "#8cbcc0"
+ },
+ "paving": {
+  "style": "ishidatami",
+  "size": 0.45
+ },
+ "lamp": {
+  "colour": "#4d4a48",
+  "height": 4.6,
+  "head": "#f6ebd0"
+ },
+ "shops": {
+  "signs": [
+   "京菓子",
+   "甘味処",
+   "お茶",
+   "和装小物",
+   "茶房"
+  ],
+  "font": "'Hiragino Mincho ProN','Yu Mincho',serif",
+  "fascias": [
+   "#5e4634",
+   "#3d4a53",
+   "#6f3a32",
+   "#4c5c47"
+  ]
+ },
+ "trees": {
+  "default": {
+   "style": 3,
+   "colours": [
+    "#8fb871",
+    "#a8c775"
+   ],
+   "height": 7,
+   "autumn": "#e37840",
+   "blossom": "#f6c6ce"
+  },
+  "rules": [
+   {
+    "match": "Bank tree",
+    "vary": 0.3,
+    "mix": [
+     {
+      "style": 4,
+      "colours": [
+       "#acd564",
+       "#bce072"
+      ],
+      "height": 8,
+      "spring": "#d0f173",
+      "autumn": "#e1c962",
+      "share": 1,
+      "blossom": false
+     },
+     {
+      "style": 3,
+      "colours": [
+       "#9bc174",
+       "#afcc79"
+      ],
+      "height": 7,
+      "blossom": "#f7c4cd",
+      "autumn": "#dd7346",
+      "share": 1
+     }
+    ]
+   },
+   {
+    "match": "Conifer",
+    "style": 5,
+    "evergreen": true,
+    "colours": [
+     "#67965d"
+    ],
+    "height": 7
+   }
+  ]
+ },
+ "people": {
+  "clothes": [
+   "#3d4a5e",
+   "#ebe2ce",
+   "#788b9c",
+   "#af5143",
+   "#4c5c47",
+   "#e0bb73",
+   "#6d5a7c"
+  ],
+  "umbrellas": [
+   "#eae3d5",
+   "#3d4a5e",
+   "#bc4d43",
+   "#e0bb73"
+  ]
+ },
+ "vehicles": {
+  "kinds": [
+   "small",
+   "small",
+   "hatch",
+   "mpv",
+   "sedan"
+  ],
+  "colours": [
+   "#f2f2ee",
+   "#eae6db",
+   "#2e3139",
+   "#99a3ae",
+   "#bba787"
+  ],
+  "plate": "#f5f3e5",
+  "taxi": {
+   "share": 0.3,
+   "colours": [
+    "#2a2c34",
+    "#e9e5d7",
+    "#568560"
+   ],
+   "kind": "sedan",
+   "sign": "#faeaa2"
+  }
+ },
+ "seasons": [
+  {
+   "id": "spring",
+   "label": "春日樱雨",
+   "leaves": "blossom",
+   "wx": "fluff",
+   "crowd": 1.3,
+   "note": {
+    "text": "白川两岸栽有约 43 株樱树，通常在三月下旬至四月上旬迎来盛花期。",
+    "source": "Jorudan 赏樱指南",
+    "url": "https://sp.jorudan.co.jp/hanami/spot_720.html"
+   }
+  },
+  {
+   "id": "summer",
+   "label": "盛夏新绿",
+   "leaves": "summer",
+   "crowd": 0.9,
+   "note": {
+    "text": "京都夏季湿热，盛夏气息往往延续至九月。",
+    "source": "京都市观光协会",
+    "url": "https://kyoto.travel/en/seasonal-info"
+   }
+  },
+  {
+   "id": "autumn",
+   "label": "深秋红叶",
+   "leaves": "autumn",
+   "crowd": 1.2,
+   "note": {
+    "text": "九月至十一月间，京都的枫叶渐次转深，水岸树影层林尽染。",
+    "source": "京都市观光协会",
+    "url": "https://kyoto.travel/en/seasonal-info"
+   }
+  },
+  {
+   "id": "winter",
+   "label": "冬日町家",
+   "leaves": "bare",
+   "coats": true,
+   "crowd": 0.8,
+   "note": {
+    "text": "京都冬季清冷干爽，平时较少出现厚重积雪。",
+    "source": "京都市观光协会",
+    "url": "https://kyoto.travel/en/seasonal-info"
+   }
+  },
+  {
+   "id": "snow",
+   "label": "白川初雪",
+   "sub": "winter",
+   "leaves": "bare",
+   "snow": true,
+   "wx": "snow",
+   "coats": true,
+   "crowd": 0.6,
+   "note": {
+    "text": "覆雪后的巽桥与町家瓦顶，是京都冬日颇具代表性的水岸取景地。",
+    "source": "Minna no Camera",
+    "url": "https://www.minnacamera.com/spots/1904"
+   }
+  }
+ ],
+ "occasions": [
+  {
+   "id": "yoizakura",
+   "label": "夜樱点灯",
+   "leaves": "blossom",
+   "night": 0.9,
+   "litShare": 0.6,
+   "crowd": 1.7,
+   "decor": {
+    "litTrees": "Bank tree|^$"
+   },
+   "note": {
+    "text": "每年三月下旬 18:00 至 22:00，白川南通沿线樱花亮灯，并点起三百余盏行灯。",
+    "source": "京都市观光协会 · 京都花灯路",
+    "url": "https://ja.kyoto.travel/event/single.php?event_id=4544"
+   },
+   "petals": true
+  },
+  {
+   "id": "kanikakuni",
+   "label": "祇园歌碑祭",
+   "leaves": "autumn",
+   "crowd": 1.4,
+   "icon": "autumn",
+   "note": {
+    "text": "每年 11 月 8 日，艺伎与舞伎会在“かにかくに”歌碑前敬献白菊。",
+    "source": "京都市观光协会",
+    "url": "https://ja.kyoto.travel/event/single.php?event_id=15274"
+   }
+  }
+ ],
+ "months": [
+  "winter",
+  "winter",
+  "spring",
+  "spring",
+  "summer",
+  "summer",
+  "summer",
+  "summer",
+  "autumn",
+  "autumn",
+  "autumn",
+  "winter"
+ ],
+ "isoLabel": "祇园全景",
+ "occasionLabel": "特别场景",
+ "views": [
+  {
+   "id": "shirakawa",
+   "label": "白川运河",
+   "camera": {
+    "yaw": -30,
+    "pitch": 30,
+    "zoom": 3,
+    "x": -20,
+    "y": -20,
+    "z": 2
+   }
+  },
+  {
+   "id": "tatsumi",
+   "label": "巽桥",
+   "camera": {
+    "yaw": 150,
+    "pitch": 36,
+    "zoom": 6.5,
+    "x": 4,
+    "y": -9,
+    "z": 1.5
+   }
+  },
+  {
+   "id": "lane",
+   "label": "白川南通",
+   "camera": {
+    "yaw": 15,
+    "pitch": 26,
+    "zoom": 4.5,
+    "x": -45,
+    "y": -28,
+    "z": 2
+   }
+  }
+ ],
+ "legend": [
+  {
+   "name": "辰巳大明神",
+   "source": "三角街口神社",
+   "count": "",
+   "icon": "landmark",
+   "camera": {
+    "yaw": -40,
+    "pitch": 38,
+    "zoom": 9,
+    "x": -1.8,
+    "y": -2.1,
+    "z": 1
+   }
+  },
+  {
+   "name": "白川运河",
+   "source": "实景水系轮廓",
+   "count": "",
+   "icon": "water",
+   "camera": {
+    "yaw": -30,
+    "pitch": 30,
+    "zoom": 3,
+    "x": -20,
+    "y": -20,
+    "z": 2
+   }
+  },
+  {
+   "name": "垂柳与樱树",
+   "source": "沿河植被示意",
+   "count": "",
+   "icon": "trees",
+   "camera": {
+    "yaw": 15,
+    "pitch": 26,
+    "zoom": 4.5,
+    "x": -45,
+    "y": -28,
+    "z": 2
+   }
+  },
+  {
+   "name": "町家茶屋建筑",
+   "source": "历史街区建筑轮廓",
+   "count": "364",
+   "icon": "buildings",
+   "camera": {
+    "yaw": -35,
+    "pitch": 30,
+    "zoom": 2.2,
+    "x": 0,
+    "y": 20,
+    "z": 4
+   }
+  }
+ ],
+ "notes": [
+  {
+   "title": "祇园白川",
+   "text": "祇园新桥传统建造物群保存地区沿河排列着江户末期至明治初期的两层茶屋町家，临水一面设有京格子木窗。",
+   "links": [
+    {
+     "label": "京都市桥梁资料 (PDF)",
+     "url": "https://www.city.kyoto.lg.jp/kensetu/cmsfiles/contents/0000149/149842/hashishirube03.pdf"
+    },
+    {
+     "label": "京都市观光协会",
+     "url": "https://ja.kyoto.travel/event/single.php?event_id=4544"
+    }
+   ]
+  },
+  {
+   "title": "垂柳与樱树",
+   "text": "白川沿岸种有约 43 株不同品种的樱花与垂柳，树种依据公开资料配置，具体树位为示意排布。",
+   "links": [
+    {
+     "label": "Jorudan 赏樱指南",
+     "url": "https://sp.jorudan.co.jp/hanami/spot_720.html"
+    },
+    {
+     "label": "京都市桥梁资料 (PDF)",
+     "url": "https://www.city.kyoto.lg.jp/kensetu/cmsfiles/contents/0000149/149842/hashishirube03.pdf"
+    }
+   ]
+  },
+  {
+   "title": "巽桥",
+   "text": "现存巽桥建于 1957 年，为长 7.5 米、宽 3.1 米的钢梁桥，桥面铺设石板并配木制栏杆；最早的木桥建于 1829 年。",
+   "links": [
+    {
+     "label": "京都市桥梁资料 (PDF)",
+     "url": "https://www.city.kyoto.lg.jp/kensetu/cmsfiles/contents/0000149/149842/hashishirube03.pdf"
+    }
+   ]
+  },
+  {
+   "title": "辰巳大明神",
+   "text": "位于两条小巷交汇三角地带的小型神社，设有鸟居、小祠堂、刻有艺名朱红玉垣以及两侧石狐，比例依据实景照片还原。",
+   "links": [
+    {
+     "label": "4travel 景点志",
+     "url": "https://4travel.jp/dm_shisetsu/11291565"
+    }
+   ]
+  },
+  {
+   "title": "かにかくに歌碑",
+   "text": "位于巽桥西侧约 30 米处的天然鞍马石碑，镌刻着吉井勇吟咏枕畔潺潺流水声的和歌，碑位为场景示意。",
+   "links": [
+    {
+     "label": "京都市桥梁资料 (PDF)",
+     "url": "https://www.city.kyoto.lg.jp/kensetu/cmsfiles/contents/0000149/149842/hashishirube03.pdf"
+    }
+   ]
+  },
+  {
+   "title": "场景绘制说明",
+   "text": "建筑基底、街道与水系采自 OpenStreetMap 实测数据；建筑层高、沿河树木、行灯、行人及车流则依据街景风貌手绘还原。",
+   "links": [
+    {
+     "label": "OpenStreetMap 地图数据",
+     "url": "https://www.openstreetmap.org/#map=18/35.0057/135.7744"
+    }
+   ]
+  }
+ ],
+ "vivid": true
+}
